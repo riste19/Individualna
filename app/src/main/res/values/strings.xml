@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Бизнис Директориум</string>
+
+    <!-- Tab titles / categories -->
+    <string name="tab_services">Сервиси</string>
+    <string name="tab_entertainment">Забава</string>
+    <string name="tab_industry">Индустрија</string>
+    <string name="tab_education">Едукација</string>
+
+    <!-- Content descriptions -->
+    <string name="company_logo_desc">Лого на компанијата</string>
+
+    <!-- Main screen -->
+    <string name="add_company">Додади компанија</string>
+    <string name="hint_search">Пребарај по име…</string>
+    <string name="empty_companies">Нема компании во оваа категорија</string>
+
+    <!-- Add company screen -->
+    <string name="title_add_company">Нова компанија</string>
+    <string name="hint_name">Назив</string>
+    <string name="hint_address">Адреса</string>
+    <string name="hint_latitude">Ширина</string>
+    <string name="hint_longitude">Должина</string>
+    <string name="hint_email">Е-маил адреса</string>
+    <string name="hint_phone">Телефон</string>
+    <string name="hint_website">Веб страна</string>
+    <string name="label_category">Категорија</string>
+    <string name="action_save">ЗАЧУВАЈ</string>
+
+    <!-- Validation / feedback -->
+    <string name="error_name_required">Внесете назив на компанијата</string>
+    <string name="error_category_required">Изберете барем една категорија</string>
+    <string name="company_saved">Компанијата е зачувана</string>
+</resources>
