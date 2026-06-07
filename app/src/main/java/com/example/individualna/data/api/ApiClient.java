@@ -10,13 +10,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * Единствен Retrofit клиент кон нашиот PHP REST API.
  *
- * 10.0.2.2 е специјалната адреса преку која Android емулаторот пристапува до
- * localhost на хост-машината (каде што работи Apache/XAMPP). За вистински
- * оддалечен сервер заменете ја BASE_URL.
+ * ПРОДУКЦИЈА (InfinityFree): постави го BASE_URL на јавната HTTPS адреса каде што
+ * се качени PHP датотеките, на пр. "https://<твој-поддомен>.infinityfreeapp.com/".
+ * Датотеките одат во htdocs/ (коренот на сајтот), па патеката нема
+ * "business-directory/" освен ако не ги качиш во таква потпапка. Заврши со "/".
+ *
+ * ЛОКАЛЕН РАЗВОЈ (XAMPP емулатор): "http://10.0.2.2/business-directory/" — 10.0.2.2 е
+ * адресата преку која Android емулаторот пристапува до localhost на хост-машината.
  */
 public final class ApiClient {
 
-    private static final String BASE_URL = "http://10.0.2.2/business-directory/";
+    // <-- замени со твојата InfinityFree адреса (заврши со "/")
+    private static final String BASE_URL = "https://your-subdomain.infinityfreeapp.com/";
 
     private static CompanyApi api;
 

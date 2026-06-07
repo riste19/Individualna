@@ -1,9 +1,24 @@
 <?php
-// PDO врска кон MySQL базата. Стандардни XAMPP параметри (root, без лозинка).
-$DB_HOST = '127.0.0.1';
-$DB_NAME = 'business_directory';
-$DB_USER = 'root';
-$DB_PASS = '';
+// PDO врска кон MySQL базата.
+//
+// === ПРОДУКЦИЈА: InfinityFree ===
+// Пополни ги овие четири вредности од контролниот панел на InfinityFree
+// (Control Panel -> MySQL Databases). Изгледаат вака:
+//   host:  sqlXXX.infinityfree.com
+//   name:  if0_XXXXXXXX_business_directory   (фиксен префикс, не може да се смени)
+//   user:  if0_XXXXXXXX
+//   pass:  (прикажана во панелот)
+$DB_HOST = 'sqlXXX.infinityfree.com';            // <-- замени
+$DB_NAME = 'if0_XXXXXXXX_business_directory';     // <-- замени
+$DB_USER = 'if0_XXXXXXXX';                        // <-- замени
+$DB_PASS = 'ВАШАТА_ЛОЗИНКА';                       // <-- замени
+
+// === ЛОКАЛЕН РАЗВОЈ: XAMPP ===
+// За тестирање на локална машина откоментирај ги овие наместо горните.
+// $DB_HOST = '127.0.0.1';
+// $DB_NAME = 'business_directory';
+// $DB_USER = 'root';
+// $DB_PASS = '';
 
 try {
     $pdo = new PDO(

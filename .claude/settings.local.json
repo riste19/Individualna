@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(.\\\\gradlew.bat :app:assembleDebug --console=plain)"
+      "PowerShell(.\\\\gradlew.bat :app:assembleDebug --console=plain)",
+      "Bash(git -C \"C:\\\\Users\\\\rseme\\\\AndroidStudioProjects\\\\Individualna\" log --oneline -10)",
+      "Bash(git -C \"C:\\\\Users\\\\rseme\\\\AndroidStudioProjects\\\\Individualna\" status --short)"
     ]
   }
 }
